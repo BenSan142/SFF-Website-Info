@@ -1,90 +1,145 @@
+/* GLOBAL */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #0a0a0a, #1a0000);
+  color: white;
+}
+
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  margin: auto;
+  padding: 5rem 2rem 2rem 2rem;
 }
 
-.logo {
-  height: 7em;
-  padding: 1em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* HEADER */
+
+.header {
+  background: linear-gradient(90deg, #000000, #2b0000);
+  border-bottom: 2px solid #ff3c00;
+  color: white;
+
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 2rem;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  box-shadow: 0 4px 15px rgba(255, 60, 0, 0.4);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+/* NAVBAR */
 
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 1rem 3;
+  padding: 0;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 6rem;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
 }
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.nav-links li:hover {
+  color: #ff3c00;
+  text-shadow: 0 0 10px #ff3c00;
+}
+
+/* LOGO */
+
+.logo {
+  height: 6em;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px #ff3c00);
+}
+
+/* FIGHTER SECTION */
+
+.fighter-section {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+/* SMALL FIGHTER IMAGE */
 
 .fighter-image {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  padding: 1rem;
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
-.fighter-image-2 {
-  width: 100%;
-  max-width: 400px;
-  display: block;
-  margin-right: auto;
+.fighter-image:hover {
+  transform: scale(1.05);
 }
+
+/* MAIN FIGHTER IMAGE */
+
+.fighter-image-2 {
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 60, 0, 0.4);
+}
+
+/* TEXT */
 
 .FighterText {
   text-align: left;
-  margin-right: 20rem;
-  padding: 1rem;
+  max-width: 500px;
+  line-height: 1.6;
 }
 
-.header {
-  background-color: black;
-  color: white;
-  width: 100%;
-  height: 60px; /* adjust as needed */
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  position: fixed; /* stays at top even when scrolling */
-  top: 0;
-  left: 0;
-  z-index: 1000; /* ensures it stays above other content */
+/* CARDS */
+
+.card {
+  padding: 2rem;
+  border-radius: 12px;
+  background: #111;
+  box-shadow: 0 0 15px rgba(255, 60, 0, 0.2);
+}
+
+/* SUBTEXT */
+
+.read-the-docs {
+  color: #aaa;
+}
+
+/* OPTIONAL FIRE GLOW ANIMATION */
+
+@keyframes fireGlow {
+  0% {
+    box-shadow: 0 0 10px #ff3c00;
+  }
+  50% {
+    box-shadow: 0 0 20px #ff3c00;
+  }
+  100% {
+    box-shadow: 0 0 10px #ff3c00;
+  }
+}
+
+.fighter-image-2:hover {
+  animation: fireGlow 1.5s infinite;
 }
