@@ -1,9 +1,11 @@
-function FighterLink({image, link, altText}: {image: string, link: string, altText: string}) {
-    return (
-        <a href={link} target="_blank" rel="noopener noreferrer">
-            <img src={image} alt={altText} className="fighter-image" />
-        </a>
-    );
+import { Link } from "react-router-dom";
+
+function FighterLink({ image, id, altText }: { image: string; id: string; altText: string }) {
+  return (
+    <Link to={`/fighter/${id}`}>
+      <img src={image} alt={altText} className="fighter-image" />
+    </Link>
+  );
 }
 
-export default FighterLink; 
+export default FighterLink;
