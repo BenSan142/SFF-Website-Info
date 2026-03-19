@@ -78,10 +78,20 @@ body {
 
 .fighter-section {
   display: flex;
-  align-items: center;
   gap: 3rem;
-  margin-top: 3rem;
+  align-items: flex-start;
+  margin-top: 2rem;
 }
+
+.fighter-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+
 
 /* SMALL FIGHTER IMAGE */
 
@@ -105,10 +115,13 @@ body {
 
 /* TEXT */
 
-.FighterText {
+.fighter-text {
   text-align: left;
   max-width: 500px;
   line-height: 1.6;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #ddd;
 }
 
 /* CARDS */
