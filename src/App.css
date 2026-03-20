@@ -156,3 +156,10 @@ body {
 .fighter-image-2:hover {
   animation: fireGlow 1.5s infinite;
 }
+
+.fighter-video {
+  margin-top: 5.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 60, 0, 0.4);
+}
+

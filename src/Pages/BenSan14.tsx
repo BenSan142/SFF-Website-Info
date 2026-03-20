@@ -17,7 +17,35 @@ function BenSan14Page() {
       <p>
         BenSan14 has participated in several tournaments and has a reputation for being a formidable opponent.
       </p>
+
+      <div className="video-section">
+
+      <div className="video-container">
+      <iframe
+        className="fighter-video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/VD8C42X_I90"
+        title="BenSan14 Fight"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+      </div>
+
+      <div className="video-container">
+      <iframe
+        className="fighter-video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dBWOY8Cbh-I"
+        title="BenSan14 Fight"
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
+      </div>
+      </div>
     </FighterPage>
+
   );
 }
 
