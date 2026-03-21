@@ -86,8 +86,9 @@ body {
 .fighter-info {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-}
+  gap: 0rem;
+  max-width: 500px;
+  flex: 1;}
 
 
 
@@ -107,7 +108,7 @@ body {
 
 /* MAIN FIGHTER IMAGE */
 
-.fighter-image-2 {
+.fighter-image-bio{
   width: 400px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(255, 60, 0, 0.4);
@@ -117,7 +118,7 @@ body {
 
 .fighter-text {
   text-align: left;
-  max-width: 500px;
+  width: 100%;
   line-height: 1.6;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -158,8 +159,44 @@ body {
 }
 
 .fighter-video {
-  margin-top: 5.5rem;
+  margin-top: 3rem;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(255, 60, 0, 0.4);
 }
 
+.video-text-section {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.video-description-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ff3c00;
+  text-shadow: 0 0 5px #ff3c00;
+}
+
+.video-description-video-1 {
+  text-align: left;
+  width: 100%;
+  line-height: 1.6;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #ddd;
+  margin-top: 1rem;
+
+}

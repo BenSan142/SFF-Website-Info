@@ -5,37 +5,44 @@ function FighterPage({
   name,
   image,
   alt,
-  children
+  children,
+  VideoDescriptions,   // 👈 NEW
 }: {
   name: string;
   image: string;
   alt: string;
   children: React.ReactNode;
+  VideoDescriptions: React.ReactNode;   // 👈 NEW
 }) {
   return (
     <div className="fighter-layout">
       <Header />
 
-      <div className="fighter-section">
+    <div className="fighter-section">
 
+     {/* LEFT COLUMN */}
+      <div>
         <img
           src={image}
           alt={alt}
-          className="fighter-image-2"
-        />
+          className="fighter-image-bio"
+       />
 
-        <div className="fighter-info">
-
-          <h1>{name}</h1>
-
-          <div className="fighter-text">
-            {children}
-          </div>
-
-        </div>
+       {VideoDescriptions}
 
       </div>
+
+      {/* RIGHT COLUMN */}
+      <div className="fighter-info">
+        <h1>{name}</h1>
+
+        <div className="fighter-text">
+          {children}
+        </div>
     </div>
+  </div>
+
+</div>
   );
 }
 
