@@ -42,7 +42,7 @@ function HendrixPage() {
 
               {/* Description for this video */}
               <p className="video-description-video">
-                Scuffmania Match: Hendrix Vs. Greg Cena Vs. Jerry Powder
+                Scuffmania 2025: Hendrix Vs. The Announcer - World Heavyweight Championship Match
               </p>
             </div>
 
@@ -57,7 +57,7 @@ function HendrixPage() {
               ></iframe>
 
               <p className="video-description-video">
-               Another Scuffmania Match: Hendrix Vs. XYZ
+                Hendrix Vs. Anonymous - SFF Championship Match
               </p>
             </div>
 
@@ -68,15 +68,14 @@ function HendrixPage() {
 
       {/* Children content: this goes into the right-side column under the fighter name */}
       <p>
-        Hendrix is a skilled fighter in the SFF.
+        Hendrix is one the most poloarizing figures in SFF, known for his unpredictable fighting style and his screams after every victory. He is a fan favorite and has a large following in the SFF community.
       </p>
       <p>
-        He has a strong background in martial arts and is known for his agility and precision in combat.
+        After joining BenSan14 and The Mighty Singh, Hendrix formed the team known as "The Ones", which helped him gain more trust and respect in the SFF Roster. However, Hendrix also had many enemies in SFF...
       </p>
       <p>
-        Hendrix has participated in several tournaments and has a reputation for being a formidable opponent.
+        At Scuffmania 2025, Hendrix had a shocking match against The Announcer for the World Heavyweight Championship, "The Ones" Vs. "The Announcers"! Hendrix ended up losing the match, but his message of teamwork and loyalty to his friends resonated with the Announcers, ending SFF with a fairy tale ending for the fans and a new era of unity in Scuffed Fight Federation.
       </p>
-
     </FighterPage> 
   );
 }

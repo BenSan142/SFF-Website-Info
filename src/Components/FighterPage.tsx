@@ -21,7 +21,7 @@ function FighterPage({
     <div className="fighter-section">
 
      {/* LEFT COLUMN */}
-      <div>
+      <div className="fighter-image-container">
         <img
           src={image}
           alt={alt}
