@@ -3,28 +3,28 @@
 import FighterPage from "../Components/FighterPage";
 
 // Import the fighter's image to display on the left side
-import FighterImg from "../assets/BenSan14.jpg";
+import FighterImg from "../assets/Hendrix.png";
 
-// This is the page for the fighter "BenSan14"
-function BenSan14Page() {
+// This is the page for the fighter "Hendrix"
+function HendrixPage() {
   return (
     // Using the FighterPage template
     <FighterPage
       // Name of the fighter (displayed in the right column header)
-      name="BenSan14" 
+      name="Hendrix" 
 
       // Image of the fighter (shown in the left column)
       image={FighterImg}
 
       // Alternative text for the image (important for accessibility)
-      alt="BenSan14"    
+      alt="Hendrix"    
 
       // VideoDescriptions is a custom prop for the FighterPage template
       // Here we pass all the videos and their descriptions
       VideoDescriptions={
         <div>
           {/* Title above the videos */}
-          <h1 className="video-description-title">BenSan14's Fight Highlights</h1>
+          <h1 className="video-description-title">Hendrix's Fight Highlights</h1>
 
           {/* Container holding all videos stacked vertically */}
           <div className="video-section">
@@ -34,15 +34,15 @@ function BenSan14Page() {
               {/* Embedded YouTube video */}
               <iframe
                 className="fighter-video"
-                src="https://www.youtube.com/embed/VD8C42X_I90"
-                title="BenSan14 Fight 1"
+                src="https://www.youtube.com/embed/2F4-QSVTrDE"
+                title="Hendrix Fight 1"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
 
               {/* Description for this video */}
               <p className="video-description-video">
-                Scuffmania Match: BenSan14 Vs. Greg Cena Vs. Jerry Powder
+                Scuffmania Match: Hendrix Vs. Greg Cena Vs. Jerry Powder
               </p>
             </div>
 
@@ -50,14 +50,14 @@ function BenSan14Page() {
             <div className="video-container">
               <iframe
                 className="fighter-video"
-                src="https://www.youtube.com/embed/dBWOY8Cbh-I"
-                title="BenSan14 Fight 2"
+                src="https://www.youtube.com/embed/y96Nb3Y_hZs"
+                title="Hendrix Fight 2"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
 
               <p className="video-description-video">
-               Another Scuffmania Match: BenSan14 Vs. XYZ
+               Another Scuffmania Match: Hendrix Vs. XYZ
               </p>
             </div>
 
@@ -68,17 +68,17 @@ function BenSan14Page() {
 
       {/* Children content: this goes into the right-side column under the fighter name */}
       <p>
-        BenSan14 is a skilled fighter in the SFF.
+        Hendrix is a skilled fighter in the SFF.
       </p>
       <p>
         He has a strong background in martial arts and is known for his agility and precision in combat.
       </p>
       <p>
-        BenSan14 has participated in several tournaments and has a reputation for being a formidable opponent.
+        Hendrix has participated in several tournaments and has a reputation for being a formidable opponent.
       </p>
 
     </FighterPage> 
   );
 }
 
-export default BenSan14Page;
+export default HendrixPage;
