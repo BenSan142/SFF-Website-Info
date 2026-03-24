@@ -42,7 +42,7 @@ function BenSan14Page() {
 
               {/* Description for this video */}
               <p className="video-description-video">
-                Scuffmania Match: BenSan14 Vs. Greg Cena Vs. Jerry Powder
+                Scuffmania 2025: BenSan14 Vs. Greg Cena Vs. Jerry Powder - SFF Championship Match
               </p>
             </div>
 
@@ -57,7 +57,7 @@ function BenSan14Page() {
               ></iframe>
 
               <p className="video-description-video">
-               Another Scuffmania Match: BenSan14 Vs. XYZ
+                Royal Fumble 2024: BenSan14's Path to Victory
               </p>
             </div>
 
@@ -68,13 +68,13 @@ function BenSan14Page() {
 
       {/* Children content: this goes into the right-side column under the fighter name */}
       <p>
-        BenSan14 is a skilled fighter in the SFF.
+        BenSan14 is a SFF Legend known for his love and dedication to the sport.
       </p>
       <p>
-        He has a strong background in martial arts and is known for his agility and precision in combat.
+        After winning the Royal Fumble in 2024, BenSan14's only goal has been to win the SFF World Championship and prove that he is the best fighter in the world.
       </p>
       <p>
-        BenSan14 has participated in several tournaments and has a reputation for being a formidable opponent.
+        At Scuffmania 2025, BenSan14 had a memorable and brutal match against Greg Cena and Jerry Powder, retiring as the last real SFF Champion.
       </p>
 
     </FighterPage> 

@@ -1,4 +1,6 @@
-/* GLOBAL */
+/* =========================
+   GLOBAL STYLES
+   ========================= */
 
 body {
   margin: 0;
@@ -7,13 +9,17 @@ body {
   color: white;
 }
 
+/* Centers your whole app and adds spacing from top (for fixed header) */
 #root {
   max-width: 1280px;
   margin: auto;
   padding: 5rem 2rem 2rem 2rem;
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER / NAVBAR
+   ========================= */
 
 .header {
   background: linear-gradient(90deg, #000000, #2b0000);
@@ -29,7 +35,7 @@ body {
 
   padding: 0 2rem;
 
-  position: fixed;
+  position: fixed; /* stays at top */
   top: 0;
   left: 0;
   z-index: 1000;
@@ -37,12 +43,11 @@ body {
   box-shadow: 0 4px 15px rgba(255, 60, 0, 0.4);
 }
 
-/* NAVBAR */
-
 .navbar {
   padding: 0;
 }
 
+/* Horizontal nav links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -62,8 +67,7 @@ body {
   text-shadow: 0 0 10px #ff3c00;
 }
 
-/* LOGO */
-
+/* Logo styling + hover effect */
 .logo {
   height: 6em;
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -74,48 +78,62 @@ body {
   filter: drop-shadow(0 0 10px #ff3c00);
 }
 
-/* FIGHTER SECTION */
 
+/* =========================
+   FIGHTER PAGE LAYOUT
+   ========================= */
+
+/* Two-column layout */
 .fighter-section {
-  display: flex;
-  gap: 3rem;
-  align-items: flex-start;
-  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 0 40px;
 }
 
+/* LEFT COLUMN (image + videos) */
+.fighter-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers content horizontally */
+}
+
+/* RIGHT COLUMN (text content) */
 .fighter-info {
   display: flex;
   flex-direction: column;
   gap: 0rem;
   max-width: 500px;
-  flex: 1;}
+  flex: 1;
+}
 
 
+/* =========================
+   IMAGES
+   ========================= */
 
-
-
-/* SMALL FIGHTER IMAGE */
-
+/* Small card-style fighter image */
 .fighter-image {
   width: 200px;
   border-radius: 10px;
   transition: transform 0.3s ease;
-
 }
 
 .fighter-image:hover {
   transform: scale(1.05);
 }
 
-/* MAIN FIGHTER IMAGE */
-
-.fighter-image-bio{
+/* Main fighter profile image */
+.fighter-image-bio {
   width: 400px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(255, 60, 0, 0.4);
 }
 
-/* TEXT */
+
+/* =========================
+   TEXT STYLING
+   ========================= */
 
 .fighter-text {
   text-align: left;
@@ -126,7 +144,15 @@ body {
   color: #ddd;
 }
 
-/* CARDS */
+/* Subtle helper text */
+.read-the-docs {
+  color: #aaa;
+}
+
+
+/* =========================
+   CARDS / EFFECTS
+   ========================= */
 
 .card {
   padding: 2rem;
@@ -135,69 +161,101 @@ body {
   box-shadow: 0 0 15px rgba(255, 60, 0, 0.2);
 }
 
-/* SUBTEXT */
-
-.read-the-docs {
-  color: #aaa;
-}
-
-/* OPTIONAL FIRE GLOW ANIMATION */
-
+/* Glow animation */
 @keyframes fireGlow {
-  0% {
-    box-shadow: 0 0 10px #ff3c00;
-  }
-  50% {
-    box-shadow: 0 0 20px #ff3c00;
-  }
-  100% {
-    box-shadow: 0 0 10px #ff3c00;
-  }
+  0% { box-shadow: 0 0 10px #ff3c00; }
+  50% { box-shadow: 0 0 20px #ff3c00; }
+  100% { box-shadow: 0 0 10px #ff3c00; }
 }
 
 .fighter-image-2:hover {
   animation: fireGlow 1.5s infinite;
 }
 
+
+/* =========================
+   VIDEO SECTION
+   ========================= */
+
+/* Stack videos vertically */
+.video-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Each video block */
+.video-container {
+  width: 100%;
+  max-width: 500px; /* controls video size */
+}
+
+/* The actual iframe video */
 .fighter-video {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* keeps consistent shape */
+  display: block;
   margin-top: 1rem;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(255, 60, 0, 0.4);
 }
 
-.video-text-section {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.video-section {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  flex: 1;
-}
-
-.video-container iframe {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-}
-
+/* Section title */
 .video-description-title {
   font-size: 1.8rem;
   font-weight: 600;
   color: #ff3c00;
   text-shadow: 0 0 5px #ff3c00;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.video-description-video-1 {
+/* Text under each video */
+.video-description-video {
   text-align: left;
-  width: 100%;
+  width: 95%;
   line-height: 1.6;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: #ddd;
   margin-top: 1rem;
-
+  color: #ff3c;
+  text-shadow: 0 0 5px #ff3c00;
 }
+
+
+/* =========================
+   🧠 CHEAT SHEET (KEEP THIS)
+   ========================= */
+
+/*
+LAYOUT:
+- display: grid → best for 2-column layouts
+- display: flex → best for stacking or alignment
+- gap → space between items
+- padding → space inside container
+- margin → space outside container
+
+SIZING:
+- width: 100% → fills container
+- max-width → limits size
+- aspect-ratio → locks shape (🔥 important for videos)
+
+ALIGNMENT:
+- align-items: center → horizontal center (flex/grid)
+- justify-content → horizontal spacing
+
+COMMON FIXES:
+- Add "display: block" to remove inline weirdness
+- Use max-width to stop stretching
+- Use aspect-ratio for consistent media
+
+DEBUG TIP:
+If something is resizing weirdly:
+→ check parent container width
+→ check if text is expanding it
+→ lock size with max-width
+
+STRUCTURE RULE:
+Outer container controls layout
+Inner elements control appearance
+*/

@@ -42,7 +42,7 @@ function TheMightySinghPage() {
 
               {/* Description for this video */}
               <p className="video-description-video">
-                Scuffmania Match: The Mighty Singh Vs. Greg Cena Vs. Jerry Powder
+                Scuffmania 2025: Benson Vs. The Mighty Singh - Intercontinetal Championship Match
               </p>
             </div>
 
@@ -57,7 +57,7 @@ function TheMightySinghPage() {
               ></iframe>
 
               <p className="video-description-video">
-               Another Scuffmania Match: BenSan14 Vs. XYZ
+               Night Of Champions 2023: The Mighty Singh Vs. BenSan14 - Intercontinental Championship Match
               </p>
             </div>
 
@@ -68,13 +68,13 @@ function TheMightySinghPage() {
 
       {/* Children content: this goes into the right-side column under the fighter name */}
       <p>
-        The Mighty Singh is a skilled fighter in the SFF.
+        The Indian Sensation is here! The Mighty Singh is a fierce competitor in the SFF, known for his no give up attitude and powerful strikes.
       </p>
       <p>
-        He has a strong background in martial arts and is known for his agility and precision in combat.
+        His finisher, the "Sikh Kick", has put many opponents to sleep and has become a fan favorite. The Mighty Singh is a true warrior in the SFF and has made his name know in the SFF Universe.
       </p>
       <p>
-        The Mighty Singh has participated in several tournaments and has a reputation for being a formidable opponent.
+        At Scuffmania 2025, The Mighty Singh had a incredible match against Benson for the Intercontinental Championship, defeating the coruppt champion and winning the title for his family.
       </p>
 
     </FighterPage> 
