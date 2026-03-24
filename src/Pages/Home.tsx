@@ -4,6 +4,7 @@ import myImage from '../assets/SFF.svg'; // Import your image
 import Header from "../Components/Header";
 import FighterLink from "../Components/FighterLink";
 import { FighterLinkList } from "../Components/FighterLinkList";
+import DailyVid from "../Components/DailyVid";
 
 
 function Home() {
@@ -45,6 +46,11 @@ function Home() {
             ))}
           </div>
 
+          <div className="featured-content">
+
+            <DailyVid />
+
+          </div>
         </div>
       </section>
     </div>
