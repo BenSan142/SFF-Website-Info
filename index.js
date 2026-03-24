@@ -50,7 +50,7 @@ app.get ('/video-of-the-day', async (req, res) => {
         const videos = videosData.items;
 
         // step 3: select a video based on the day of the year
-        const today = Math.floor((new Date() - new Date(new Date().getFullYear(), 0, 0)) / 86400000); // Calculate the day of the year
+        const today = Math.floor((new Date() - new Date(new Date().getFullYear(), 0, 1)) / 86400000); // Calculate the day of the year
         console.log('today index:', today);     // what number is today?
        
         // Use the modulo operator to select a video from the list based on the day of the year. This way, we will cycle through the videos in the playlist throughout the year.
