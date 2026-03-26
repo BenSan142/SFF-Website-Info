@@ -222,6 +222,25 @@ body {
   text-shadow: 0 0 5px #ff3c00;
 }
 
+.cards {
+  display: flex; /* makes .cards a flex container */
+  flex-direction: column;   /* stack gallery on top, video below */
+  gap: 2rem; /* adds 32px of space between the gallery and the video */
+  width: 100%; /* stretches .cards to fill its parent's full width */
+}
+
+.imageGallery {
+  display: flex; /* makes the gallery a flexbox container so images sit in a row */
+  flex-wrap: wrap;          /* images wrap to next row instead of expanding right */
+  gap: 0.75rem; /* adds 12px of space between images */
+  max-width: 900px;   /* caps the gallery width — change this to control how many images fit per row */   
+  width: 100%; /* lets the gallery shrink below 900px on smaller screens */
+}
+
+.featured-content {
+  width: 100%; /* stretches the video section to fill the full available width */
+ flex-shrink: 0; /* prevents the video section from being squished if space gets tight */
+}
 
 /* =========================
    🧠 CHEAT SHEET (KEEP THIS)
