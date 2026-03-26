@@ -71,6 +71,8 @@ body {
 .logo {
   height: 6em;
   transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 50%;
+  transform: translateY(-20%);
 }
 
 .logo:hover {
@@ -242,6 +244,58 @@ body {
  flex-shrink: 0; /* prevents the video section from being squished if space gets tight */
 }
 
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 99vw;
+  height: 50%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+  z-index: 1; /* sits above the video but below the text */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1; /* sits above both the video and the overlay */
+  text-align: center;
+    transform: translateY(-50%);
+}
+
+.SFF-logo { 
+    text-shadow: 0 0 10px #ff3c00, 0 0 20px #100c08, 0 0 30px #ff3c00;
+}
+
+.fire-btn {
+  position: relative;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #ff4d00, #ff9900);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.2s ease;
+}
+
+/* Hover scale */
+.fire-btn:hover {
+  transform: scale(1.15);
+}
+
 /* =========================
    🧠 CHEAT SHEET (KEEP THIS)
    ========================= */
@@ -278,3 +332,8 @@ STRUCTURE RULE:
 Outer container controls layout
 Inner elements control appearance
 */
+
+
+.featured h2 { 
+  margin-top: 0%;
+}
