@@ -61,12 +61,12 @@ export const FighterLinkList = [
     image: photo5,
     alt: "Damian Graves",
     name: "Damian Graves",
-    bio: ["Damian Graves is a seasoned wrestler in the SFF, known for his technical skills and strategic gameplay.", 
-      "After winning the Royal Fumble in 2024, Damian's only goal has been to win the SFF World Championship and prove that he is the best wrestler in the world.", 
-      "At Scuffmania 2025, Damian had a memorable and brutal match against Greg Cena and Jerry Powder, where he won and retired as the last real SFF Champion."],
+    bio: ["Damian Graves is an Australian wrestler, well known for his cocky nature and his impressive wrestling abilities.", 
+      "He wrestled in different companies out of Scuffed Fight Federation, but once BenSan14 arrived at Australia, everything changed. Damian saw him as an outsider and a threat to his dominance, and thus, he made it his mission to disrespect BenSan14 and make him look bad in front of his fans.", 
+      "Damian Graves and BenSan14 ended up having a match at Australia, where Damian Graves ended up losing in the end. After that, both BenSan14 and Damian got jumped by Justin Powder, leaving them beat up on the ground. After that, Damian Graves showed mutual respect to BenSan14, and he ended up disappearing from the SFF roster, leaving his legacy unfinished and his fans wondering what could have been."],
     videos: [
-      { src: "https://www.youtube.com/embed/VpCeZYqtj_4", title: "Fight 1", description: "Scuffmania 2025: The Announcer Vs. Greg Cena Vs. Jerry Powder - SFF Championship Match" },
-      { src: "https://www.youtube.com/embed/hwdoAxMA--E", title: "Fight 2", description: "Royal Fumble 2024: The Announcer's Path to Victory" },
+      { src: "https://www.youtube.com/embed/VpCeZYqtj_4", title: "Fight 1", description: "Damian Graves confronts BenSan14 and Lucky Garcia..." },
+      { src: "https://www.youtube.com/embed/hwdoAxMA--E", title: "Fight 2", description: "Damian Graves and BenSan14's Clash at Australia" },
     ]
   },  
   {
@@ -74,10 +74,11 @@ export const FighterLinkList = [
     image: photo6,
     alt: "Greg Cena",
     name: "Greg Cena",
-    bio: ["Greg Cena is a charismatic and influential figure in the SFF, known for his commentary and impact on the sport.", "After winning the Royal Fumble in 2024, Greg Cena's only goal has been to win the SFF World Championship and prove that he is the best announcer in the world.", "At Scuffmania 2025, Greg Cena had a memorable and brutal match against Damian Graves and Jerry Powder, where he won and retired as the last real SFF Champion."],
+    bio: ["Greg Cena is a notorious fighter in the SFF, a beast unleashed that destroys anyone in his way.", "After betraying BenSan14 and attacking him, Greg Cena went on a solo run where he defeated multiple opponents and won many noteworthy championships.", 
+      "Greg Cena walked into Scuffmania as the SFF World Champion. However, at Scuffmania 2025, Greg Cena had a brutal triple threat against BenSan14 and Jerry Powder, where he was beaten in his last ever fight, losing the championship in the grandest stage of them all."],
     videos: [
-      { src: "https://www.youtube.com/embed/VD8C42X_I90", title: "Fight 1", description: "Scuffmania 2025: The Announcer Vs. Greg Cena Vs. Jerry Powder - SFF Championship Match" },
-      { src: "https://www.youtube.com/embed/dBWOY8Cbh-I", title: "Fight 2", description: "Royal Fumble 2024: The Announcer's Path to Victory" },
+      { src: "https://www.youtube.com/embed/VD8C42X_I90", title: "Fight 1", description: "Scuffmania 2025: BenSan14 Vs. Greg Cena Vs. Jerry Powder - SFF Championship Match" },
+      { src: "https://www.youtube.com/embed/GS53OdndoDY", title: "Fight 2", description: "Jerry Powder Vs. Greg Cena | Special Guest Referee SFF Championship Match" },
     ]
   },
 
