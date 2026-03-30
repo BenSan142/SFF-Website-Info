@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import myImage from '../assets/SFF.svg'; // Import your image
 import Header from "../Components/Header";
 import DailyVid from "../Components/DailyVid";
-import VideoBg from "../assets/fire.mp4"; // Import the video background
+//import VideoBg from "../assets/fire.mp4"; // Import the video background
 import RandomFighters from "../Components/RandomFighters";
 
 function Home() {
@@ -18,7 +18,7 @@ function Home() {
       <section className="hero">
         <div className="overlay"></div>
         <video autoPlay muted loop className="hero-video">
-          <source src={VideoBg} type="video/mp4" />
+          <source src="https://res.cloudinary.com/dhaocx3rp/video/upload/v1774845120/198020-906217285_ipxzdc.mp4" type="video/mp4" />
         </video>
         <div className="hero-content">
           <h1 className="SFF-logo">SFF: Scuffed Fight Federation</h1>
