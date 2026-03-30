@@ -2,11 +2,9 @@ import "../index.css";
 import { Link } from 'react-router-dom';
 import myImage from '../assets/SFF.svg'; // Import your image
 import Header from "../Components/Header";
-import FighterLink from "../Components/FighterLink";
-import { FighterLinkList } from "../Components/FighterLinkList";
 import DailyVid from "../Components/DailyVid";
 import VideoBg from "../assets/fire.mp4"; // Import the video background
-
+import RandomFighters from "../Components/RandomFighters";
 
 function Home() {
   return (
@@ -39,17 +37,7 @@ function Home() {
         <h2>FEATURES</h2>
         <div className="cards">
 
-          <div className="imageGallery">
-            {/* Image gallery content */}
-            {FighterLinkList.map((fighter, index) => (
-            <FighterLink
-            key={index}
-            id={fighter.id}
-            image={fighter.image}
-            altText={fighter.alt}
-            />
-            ))}
-          </div>
+          <RandomFighters />
 
           <div className="featured-content">
 

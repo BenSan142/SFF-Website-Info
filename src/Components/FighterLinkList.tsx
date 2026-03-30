@@ -4,6 +4,9 @@ import photo3 from "../assets/Hendrix.png";
 import photo4 from "../assets/TheAnnouncer.png";
 import photo5 from "../assets/DamianGraves.png";
 import photo6 from "../assets/GregCena.png";
+import photo7 from "../assets/JerryPowder.png";
+import photo8 from "../assets/JimTru.png";
+import photo9 from "../assets/DerrickSwagger.png";
 
 export const FighterLinkList = [
   {
@@ -81,10 +84,39 @@ export const FighterLinkList = [
       { src: "https://www.youtube.com/embed/GS53OdndoDY", title: "Fight 2", description: "Jerry Powder Vs. Greg Cena | Special Guest Referee SFF Championship Match" },
     ]
   },
-
-
-
-  
+    {
+    id: "JerryPowder",
+    image: photo7,
+    alt: "Jerry Powder",
+    name: "Jerry Powder",
+    bio: ["Jerry Powder is a ruthless competitor in the SFF, known for his aggressive style and powerful moves.", "After being betrayed by BenSan14, Jerry Powder sought revenge and became a formidable force in the SFF.", "At Scuffmania 2025, Jerry Powder had a intense match against Greg Cena and BenSan14, where he emerged victorious and solidified his position as a top-tier fighter."],
+    videos: [
+      { src: "https://www.youtube.com/embed/VD8C42X_I90", title: "Fight 1", description: "Scuffmania 2025: BenSan14 Vs. Greg Cena Vs. Jerry Powder - SFF Championship Match" },
+      { src: "https://www.youtube.com/embed/dBWOY8Cbh-I", title: "Fight 2", description: "Royal Fumble 2024: BenSan14's Path to Victory" },
+    ]
+  },
+      {
+    id: "JimTru",
+    image: photo8,
+    alt: "Jim Tru",
+    name: "Jim Tru",
+    bio: ["Jim Tru is a relentless competitor in the SFF, known for his tenacity and unwavering determination.", "After being betrayed by BenSan14, Jim Tru sought revenge and became a formidable force in the SFF.", "At Scuffmania 2025, Jim Tru had a intense match against Greg Cena and BenSan14, where he emerged victorious and solidified his position as a top-tier fighter."],
+    videos: [
+      { src: "https://www.youtube.com/embed/VD8C42X_I90", title: "Fight 1", description: "Scuffmania 2025: BenSan14 Vs. Greg Cena Vs. Jerry Powder - SFF Championship Match" },
+      { src: "https://www.youtube.com/embed/dBWOY8Cbh-I", title: "Fight 2", description: "Royal Fumble 2024: BenSan14's Path to Victory" },
+    ]
+  },
+        {
+    id: "DerrickSwagger",
+    image: photo9,
+    alt: "Derrick Swagger",
+    name: "Derrick Swagger",
+    bio: ["Derrick Swagger is a relentless competitor in the SFF, known for his tenacity and unwavering determination.", "After being betrayed by BenSan14, Derrick Swagger sought revenge and became a formidable force in the SFF.", "At Scuffmania 2025, Derrick Swagger had a intense match against Greg Cena and BenSan14, where he emerged victorious and solidified his position as a top-tier fighter."],
+    videos: [
+      { src: "https://www.youtube.com/embed/VD8C42X_I90", title: "Fight 1", description: "Scuffmania 2025: BenSan14 Vs. Greg Cena Vs. Jerry Powder - SFF Championship Match" },
+      { src: "https://www.youtube.com/embed/dBWOY8Cbh-I", title: "Fight 2", description: "Royal Fumble 2024: BenSan14's Path to Victory" },
+    ]
+  },
 ];
 
 // FighterLinkList  →  has all the data

@@ -22,8 +22,8 @@ function FighterPageFull() {
                 <div className="imageGallery-full">
                     {FighterLinkList.map((fighter, index) => (
                         <FighterLink
-                            key={index}
                             id={fighter.id}
+                            key={index}
                             image={fighter.image}
                             altText={fighter.alt}
                         />
