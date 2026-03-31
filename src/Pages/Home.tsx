@@ -2,10 +2,9 @@ import "../index.css";
 import { Link } from 'react-router-dom';
 import myImage from '../assets/SFF.svg'; // Import your image
 import Header from "../Components/Header";
-import FighterLink from "../Components/FighterLink";
-import { FighterLinkList } from "../Components/FighterLinkList";
 import DailyVid from "../Components/DailyVid";
-
+//import VideoBg from "../assets/fire.mp4"; // Import the video background
+import RandomFighters from "../Components/RandomFighters";
 
 function Home() {
   return (
@@ -17,16 +16,20 @@ function Home() {
         <img src={myImage} alt="SFF Logo" className="logo" />
       </div>
       <section className="hero">
-        <div className="hero-overlay" />
+        <div className="overlay"></div>
+        <video autoPlay muted loop className="hero-video">
+          <source src="https://res.cloudinary.com/dhaocx3rp/video/upload/v1774845120/198020-906217285_ipxzdc.mp4" type="video/mp4" />
+        </video>
         <div className="hero-content">
-          <h1>SFF: Scuffed Fight Federation</h1>
-          <p>Where the people are the real champions...</p>
+          <h1 className="SFF-logo">SFF: Scuffed Fight Federation</h1>
+          <h2>Where the people are the real champions...</h2>
           <Link to="https://www.youtube.com/@ScuffedFightFederation" target="_blank" rel="noopener noreferrer">
-            <button className="cta">
+            <button className="fire-btn">
                 WATCH NOW
             </button>
           </Link>
         </div>
+        <img src={myImage} alt="SFF Logo" className="logo" onClick={() => window.open("https://www.youtube.com/@ScuffedFightFederation", "_blank")} />
       </section>
 
       {/* FEATURED SECTION */}
@@ -34,17 +37,7 @@ function Home() {
         <h2>FEATURES</h2>
         <div className="cards">
 
-          <div className="imageGallery">
-            {/* Image gallery content */}
-            {FighterLinkList.map((fighter, index) => (
-            <FighterLink
-            key={index}
-            id={fighter.id}
-            image={fighter.image}
-            altText={fighter.alt}
-            />
-            ))}
-          </div>
+          <RandomFighters />
 
           <div className="featured-content">
 

@@ -37,7 +37,6 @@ app.get ('/video-of-the-day', async (req, res) => {
         console.log('Fetching new video of the day');
         const channelResponse = await fetch(`https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=${process.env.YOUTUBE_ID}&key=${process.env.YOUTUBE_API_KEY}`);
         const channelData = await channelResponse.json();
-        console.log(channelData.items[0]);
 
         // drill into the response to get the uploads playlist ID. The uploads playlist ID is located in channelData.items[0].contentDetails.relatedPlaylists.uploads
         const uploadsPlaylistId = channelData.items[0].contentDetails.relatedPlaylists.uploads;
@@ -51,11 +50,9 @@ app.get ('/video-of-the-day', async (req, res) => {
 
         // step 3: select a video based on the day of the year
         const today = Math.floor((new Date() - new Date(new Date().getFullYear(), 0, 1)) / 86400000); // Calculate the day of the year
-        console.log('today index:', today);     // what number is today?
        
         // Use the modulo operator to select a video from the list based on the day of the year. This way, we will cycle through the videos in the playlist throughout the year.
         const videoOfTheDay = videos[today % videos.length]; // Select a video based on the day of the year
-        console.log(videoOfTheDay.snippet.title);
 
         // Cache the video of the day and the date it was fetched
         cache.video = videoOfTheDay;
