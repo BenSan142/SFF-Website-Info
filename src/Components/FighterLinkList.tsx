@@ -7,6 +7,13 @@ import photo6 from "../assets/GregCena.png";
 import photo7 from "../assets/JerryPowder.png";
 import photo8 from "../assets/JimTru.png";
 import photo9 from "../assets/DerrickSwagger.png";
+import photo10 from "../assets/NYC.png";
+import photo11 from "../assets/TheConstrictor.png";
+import photo12 from "../assets/Quesar.png";
+import photo13 from "../assets/Apoco.png";
+import photo15 from "../assets/Sergio.png";
+import photo14 from "../assets/Keith.png"; 
+
 
 export const FighterLinkList = [
   {
@@ -89,10 +96,13 @@ export const FighterLinkList = [
     image: photo7,
     alt: "Jerry Powder",
     name: "Jerry Powder",
-    bio: ["Jerry Powder is a ruthless competitor in the SFF, known for his aggressive style and powerful moves.", "After being betrayed by BenSan14, Jerry Powder sought revenge and became a formidable force in the SFF.", "At Scuffmania 2025, Jerry Powder had a intense match against Greg Cena and BenSan14, where he emerged victorious and solidified his position as a top-tier fighter."],
+    bio: ["Jerry Powder is a dastardly opponent in the SFF, known for his dangerous powder that he throws on his enemies.", 
+      "Since he is one of the founding fighters that started SFF, Jerry Powder has a long history in his championship victories, being the only fighter to be a two-time SFF World Champion.", 
+      "Jerry has little to no friends, putting his main focus on winning by any means necessary. However, Greg Cena pulled a trick on him at Crown Jewel 2025, beating Jerry brutally with a chair for the Championship." ,
+       "At Scuffmania 2025, Jerry Powder had a triple threat against BenSan14 and Greg Cena, two of his biggest rivals in the grandest stage of them all. Powder was beaten in the match, getting pinned by BenSan14 in the process. However, Jerry Powder's infamous legacy will always be remembered for his dirty antics and ruthless actions."],
     videos: [
       { src: "https://www.youtube.com/embed/VD8C42X_I90", title: "Fight 1", description: "Scuffmania 2025: BenSan14 Vs. Greg Cena Vs. Jerry Powder - SFF Championship Match" },
-      { src: "https://www.youtube.com/embed/dBWOY8Cbh-I", title: "Fight 2", description: "Royal Fumble 2024: BenSan14's Path to Victory" },
+      { src: "https://www.youtube.com/embed/IMU0SPFB-gY", title: "Fight 2", description: "Anonynmous Vs. Hendrix Vs. Jerry Powder | Triple Threat SFF Championship Match" },
     ]
   },
       {
@@ -100,21 +110,88 @@ export const FighterLinkList = [
     image: photo8,
     alt: "Jim Tru",
     name: "Jim Tru",
-    bio: ["Jim Tru is a relentless competitor in the SFF, known for his tenacity and unwavering determination.", "After being betrayed by BenSan14, Jim Tru sought revenge and became a formidable force in the SFF.", "At Scuffmania 2025, Jim Tru had a intense match against Greg Cena and BenSan14, where he emerged victorious and solidified his position as a top-tier fighter."],
+    bio: ["Jim Tru is a friendly referee/announcer in the SFF. He knew how to run the show and how to keep the crowd cheering. With a surprise win against Greg Cena, making him the World Heavyweight Champion.", "However, after being betrayed by Benson, a switch of agression turned on inside Jim Tru, making want to seek revenge and make himself known.", 
+      "At Scuffmania 2025, Jim Tru had a speed match against NYC and Benson, where he pinned Benson in less than 10 seconds, solidifying him as a Tag Team Champion."],
     videos: [
-      { src: "https://www.youtube.com/embed/VD8C42X_I90", title: "Fight 1", description: "Scuffmania 2025: BenSan14 Vs. Greg Cena Vs. Jerry Powder - SFF Championship Match" },
-      { src: "https://www.youtube.com/embed/dBWOY8Cbh-I", title: "Fight 2", description: "Royal Fumble 2024: BenSan14's Path to Victory" },
+      { src: "https://www.youtube.com/embed/IELycImI-rs", title: "Fight 1", description: "Scuffmania 2025: Benson & NYC Vs. Jim Tru & Hendrix | Tag Team Championship Match" },
+      { src: "https://www.youtube.com/embed/9SiR_AHj_74", title: "Fight 2", description: "Jim Tru wins the World Heavyweight Championship!!!" },
     ]
   },
-        {
+  {
     id: "DerrickSwagger",
     image: photo9,
     alt: "Derrick Swagger",
     name: "Derrick Swagger",
-    bio: ["Derrick Swagger is a relentless competitor in the SFF, known for his tenacity and unwavering determination.", "After being betrayed by BenSan14, Derrick Swagger sought revenge and became a formidable force in the SFF.", "At Scuffmania 2025, Derrick Swagger had a intense match against Greg Cena and BenSan14, where he emerged victorious and solidified his position as a top-tier fighter."],
+    bio: ["Derrick Swagger is a technical wrestler that joined SFF in its Golden Ages.", "Derrick had a short career in the SFF, only having 3 matches in total. However, Derrick Swagger was an interesting character with a lot of potential, and his matches were always very technical and he performed at a high level."] ,
     videos: [
-      { src: "https://www.youtube.com/embed/VD8C42X_I90", title: "Fight 1", description: "Scuffmania 2025: BenSan14 Vs. Greg Cena Vs. Jerry Powder - SFF Championship Match" },
-      { src: "https://www.youtube.com/embed/dBWOY8Cbh-I", title: "Fight 2", description: "Royal Fumble 2024: BenSan14's Path to Victory" },
+      { src: "https://www.youtube.com/embed/El_uojF98cs", title: "Fight 1", description: "Derrick Swagger Vs. BenSan14" },
+      { src: "https://www.youtube.com/embed/NIGiBk7amw4", title: "Fight 2", description: "BenSan14 Vs. Jerry Vs. Beasley Vs. Derrick" },
+    ]
+  },
+
+  {
+    id: "NYC",
+    image: photo10,
+    alt: "NYC",
+    name: "NYC",
+    bio: ["The Farmer turned MMA fighter...", "NYC is a force to be reckoned with, debuting at the Royal Fumble 2024, eliminating The Mighty Singh with his Knuckle Sandwich. This man is strong and his MMA background allows him to dominate his competitors.", "NYC made his impact in the SFF in the short time he was in the company."] ,
+    videos: [
+      { src: "https://www.youtube.com/embed/dBWOY8Cbh-I", title: "Fight 1", description: "Royal Fumble 2024: NYC makes his Triumphent Debut to Scuffed Fight Federation" },
+      { src: "https://www.youtube.com/embed/404FcBf1bP0", title: "Fight 2", description: "NYC Vs. The Mighty Singh | 1-on-1 Match" },
+    ]
+  },
+  {
+    id: "TheConstrictor",
+    image: photo11,
+    alt: "The Constrictor",
+    name: "The Constrictor",
+    bio: ["The clutcher of necks... the eater of hearts... The Constrictor made a name for himself in Scuffed Fight Federation with his devastating submission attacks and dirty tricks, with his devastating feud against BenSan14.", "Though his career was cut short because of scheduling conflicts, The Constrictor made an impact and fans still wonder where he is to this day."] ,
+    videos: [
+      { src: "https://www.youtube.com/embed/ejwdvtNLw-Q", title: "Fight 1", description: "Scuffed Slam 2022: BenSan14 Vs. The Constrictor | Intercontinental Championship Match" },
+      { src: "https://www.youtube.com/embed/QBED1tMF8-Y", title: "Fight 2", description: "The Constrictor attacks BenSan14 during an interview!" },
+    ]
+  },
+  {
+    id: "Quesar",
+    image: photo12,
+    alt: "Quesar",
+    name: "Quesar",
+    bio: ["Quesar is a fighter from Spain who specializes in Jiu Jitsu and Karate to defeat his opponents.", "Quesar participated in the one and only Money in the Bag match in SFF history, where he had a memorable performance. However, Quesar took the loss and disappeared from the SFF roster since his contract expired, leading to him to go to different companies and have a successful career in the wrestling universe."] ,
+    videos: [
+      { src: "https://www.youtube.com/embed/qOkxvJQ9YbI", title: "Fight 1", description: "Anonymous Vs. Apoco C. Pa Vs. Beasley Brian Vs. Quesar | Money in the Bag Match" },
+      { src: "https://www.youtube.com/embed/bqC3n_sv1Hs", title: "Fight 2", description: "BenSan14 Vs. Quesar Vs. Apoco C. Pa | Triple Threat Match" },
+    ]
+  },
+  {
+    id: "ApocoCPa",
+    image: photo13,
+    alt: "ApocoCPa",
+    name: "Apoco C. Pa",
+    bio: ["Apoco C. Pa is a fighter from Spain who is a trained professional wrestler and specializes in his devastating cutter.", "He had a short career in the SFF with a win and a loss, but he made the decision to retire from wrestling for his family's sake, enjoying his time with his son after ending his career."] ,
+    videos: [
+      { src: "https://www.youtube.com/embed/qOkxvJQ9YbI", title: "Fight 1", description: "Scuffed Slam 2022: BenSan14 Vs. The Constrictor | Intercontinental Championship Match" },
+      { src: "https://www.youtube.com/embed/bqC3n_sv1Hs", title: "Fight 2", description: "BenSan14 Vs. Quesar Vs. Apoco C. Pa | Triple Threat Match" },
+    ]
+  },
+  {
+    id: "KeithLee",
+    image: [photo14],
+    alt: "Keith Lee",
+    name: "Keith Lee",
+    bio: ["Keith Lee is a massive SFF fighter known for a strong build and powerful strikes.", "In his 2nd SFF match, Keith Lee had an oppurtunity to win the SFF World Championship against Anonymous and The Mighty Singh, but he ended up losing the match and disappearing from the SFF roster, leaving fans wondering what could have been if Keith Lee had stayed in the SFF for a longer time." ] ,
+    videos: [
+      { src: "https://www.youtube.com/embed/3rxt0brij70", title: "Fight 1", description: "SFF Battleground 2022: Keith Lee Vs. The Mighty Singh | Triple Threat SFF Championship Match" },
+      { src: "https://www.youtube.com/embed/GSKul6F-_fc", title: "Fight 2", description: "Keith Lee Vs. The Mighty Singh | 1-on-1 Match" },
+    ]
+  },
+  {
+    id: "SergioEscobar",
+    image: [photo15],
+    alt: "Sergio Escobar",
+    name: "Sergio Escobar",
+    bio: ["Sergio Escobar is a fighter from Mexico who specializes in grapling and his finisher, THE SERGIO SLAM!!!"] ,
+    videos: [
+      { src: "https://www.youtube.com/embed/dBWOY8Cbh-I", title: "Fight 1", description: "Royal Fumble 2024: Entrant #3" },
     ]
   },
 ];
