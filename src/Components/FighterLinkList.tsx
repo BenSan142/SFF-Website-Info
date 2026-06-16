@@ -13,6 +13,7 @@ import photo12 from "../assets/Quesar.png";
 import photo13 from "../assets/Apoco.png";
 import photo15 from "../assets/Sergio.png";
 import photo14 from "../assets/Keith.png"; 
+import photo16 from "../assets/JustinPowder.jpeg";
 
 
 export const FighterLinkList = [
@@ -192,6 +193,16 @@ export const FighterLinkList = [
     bio: ["Sergio Escobar is a fighter from Mexico who specializes in grapling and his finisher, THE SERGIO SLAM!!!"] ,
     videos: [
       { src: "https://www.youtube.com/embed/dBWOY8Cbh-I", title: "Fight 1", description: "Royal Fumble 2024: Entrant #3" },
+    ]
+  },
+    {
+    id: "JustinPowder",
+    image: [photo16],
+    alt: "Justin Powder",
+    name: "Justin Powder",
+    bio: ["Justin Powder is the brother of Jerry Powder. He was hired by Jerry to travel to Australia and attack BenSan14 in order to defeat his opponent, BenSan14" ] ,
+    videos: [
+      { src: "https://www.youtube.com/embed/wxzkpUTWzio", title: "Fight 1", description: "BenSan14 Vs. Justin Powder | No Mercy 2025"},
     ]
   },
 ];

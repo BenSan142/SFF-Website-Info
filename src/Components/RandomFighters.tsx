@@ -15,7 +15,7 @@ function RandomFighters() {
                 <FighterLink
                 id={fighter.id} // Use fighter.id as the key instead of index (might change later if we add more fighters, but for now it works)
                 key={index}
-                image={fighter.image}
+                image={Array.isArray(fighter.image) ? fighter.image[0] : fighter.image}
                 altText={fighter.alt}
                 />
                 ))}
